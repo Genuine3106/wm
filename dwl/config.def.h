@@ -51,7 +51,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "swaybg", "-m", "center","-i", "/home/wilson/wm/wpaper/wpaper.jpg", NULL,
+        "swaybg", "-m", "center","-i", "~/wm/wpaper/wpaper.jpg", NULL,
         "pipewire", NULL,
         "widle", "-t", "90", "wlock", NULL,
         "widle", "-t", "120", "sudo", "ZZZ", NULL,
