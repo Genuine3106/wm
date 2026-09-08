@@ -51,7 +51,8 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "swaybg", "-m", "center","-i", "~/wm/wpaper/wpaper.jpg", NULL,
+        /* replace the image directory with wherever you have your stuff */
+        "swaybg", "-m", "center","-i", "/home/wilson/wm/wpaper/wpaper.jpg", NULL,
         "pipewire", NULL,
         "widle", "-t", "90", "wlock", NULL,
         "widle", "-t", "120", "sudo", "ZZZ", NULL,
@@ -155,8 +156,8 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 
 /* commands */
 static const char *termcmd[] = { "foot", NULL };
-static const char *menucmd[] = {"j4-dmenu-desktop", "--dmenu=mew -i -f Hack -l 10", NULL};
-static const char *dmenucmd[] = { "rofi", "-dmenu", NULL };
+static const char *menucmd[] = {"j4-dmenu-desktop", "--dmenu=mew -i -f Hack -l 10 -nb 000000 -nf ffffff -sb f7f5a8ff -sf 000000", NULL};
+static const char *dmenucmd[] = { "mew", "-i", "-f", "Hack 12", "-nb", "000000", "-nf", "ffffff", "-sb", "f7f5a8ff", "-sf", "000000", NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: 2 -> at, etc. */
