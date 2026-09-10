@@ -38,11 +38,18 @@ nvim: this is a bit controversial, but it's basically a slightly modified versio
 
 
 # Dependencoes
-I'm missing a few so give me some time to update. Luckily, the compile errors should be verbose enough for you to figure it out though  <br>
 
 ```
-xbps-install libinput libinput-devel wayland wayland-devel wlroots0.19 wlroots0.19-devel libxkbcommon libxkbcommon-devel wayland-protocols pkg-config xorg-server-xwayland brightnessctl tllist fcft pixman pipewire wireplumber nerd-fonts font-hack-ttf alsa-pipewire swaybg wl-clipboard elogind dbus
+xbps-install libinput libinput-devel wayland wayland-devel wlroots0.19 wlroots0.19-devel libxkbcommon libxkbcommon-devel wayland-protocols pkg-config xorg-server-xwayland 
 ```
+<br><br>
+
+Here are some packages that are needed to work on my build <br>
+
+```
+xbps-install brightnessctl tllist fcft fcft-devel alsa-lib-devel pixman pipewire wireplumber nerd-fonts font-hack-ttf alsa-pipewire swaybg wl-clipboard elogind dbus
+```
+
 
 <br><br>
 
