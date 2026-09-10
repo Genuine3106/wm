@@ -1,0 +1,8 @@
+[opener]
+play = [
+	{ run = "mpv %s", orphan = true, for = "unix" },
+	{ run = '"C:\Program Files\mpv.exe" %s', orphan = true, for = "windows" }
+]
+edit = [
+	{ run = "nvim", block = true, for = "unix" },
+]
